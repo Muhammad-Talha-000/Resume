@@ -1,0 +1,382 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
+.main{
+    background: white;
+}
+.navbar ul{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    background-color: white;
+    overflow: hidden;
+    padding-right: 29px;
+    gap: 18px;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    height: 43px;
+    flex-shrink: 0;
+    font-family: "Heebo", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.navbar li{
+    float: right;
+    padding: 10px;
+}
+.navbar a:hover{
+    background: #FF6464;
+    cursor: pointer;
+}
+.section1{
+    margin: 60px;
+    gap: 147px;
+    height: 396px;
+    flex-shrink: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+.section1main{
+    display: block;
+}
+.name{
+    width: 506px;
+    height: 105px;
+    flex-shrink: 0;
+    color: #21243D;
+    font-family: "Heebo", sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; 
+}
+.picborder{
+    width: 243px;
+    height: 243px;
+    flex-shrink: 0;
+    fill: #EDF7FA;
+}
+.pic{
+    width: 243px;
+    height: 243px;
+    flex-shrink: 0;
+    border-radius: 243px;
+    background-image: url(images/Ellipse\ 1.png), lightgray 50% / cover no-repeat;
+}
+.textlayout{
+    color: #21243D;
+    font-family: "Heebo", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 497px;
+    height: 66px;
+    flex-shrink: 0;
+}
+.downloadblock{
+    width: 208px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #FF6464;
+    text-align: center;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 35px;
+}
+.downloadblock:hover{
+    box-shadow: 2px 4px 8px grey;
+    border: none;
+    cursor: pointer;
+}
+.section2{
+    display: flex;
+    justify-content: center;
+    height: 396px;
+    flex-shrink: 0;
+    background: #EDF7FA;
+}
+.toptext{
+    color: #21243D;
+    font-family: "Heebo", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    margin: auto;
+}
+.child{
+    width: 418px;
+    height: 295px;
+    padding: 20px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
+}
+.childtop{
+    width: 374px;
+    height: 85px;
+    flex-shrink: 0;
+    color: #21243D;
+    font-family: "Heebo", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.childmid{
+    width: 374px;
+    height: 34px;
+    flex-shrink: 0;
+    color: #21243D;
+    font-family: "Heebo", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.viewitems{
+    padding-top: 10px;
+    width: 418px;
+    height: 28px;
+    flex-shrink: 0;
+    color: #00A8CC;
+    text-align: right;
+    font-family: "Heebo", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.viewitems:hover{
+    color: aqua;
+    cursor: pointer;
+}
+.subsection{
+    padding: 10px 30px;
+}
+.section3{
+    display: grid;
+    justify-content: center;
+    margin: 60px;
+    flex-shrink: 0;
+    background: white;
+}
+.picture{
+    width: 246px;
+    height: 180px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: lightgray;
+}
+.heading{
+    color: #21243D;
+    font-family: "Heebo", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.yearflex{
+    display: flex;
+    align-items: center;
+}
+.year{
+    text-align: center;
+    width: 62px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: #142850;
+}
+.yeartext{
+    color: white;
+    font-family: "Heebo", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+}
+.skill{
+    width: 374px;
+    height: 34px;
+    flex-shrink: 0;
+    color: #8695A4;
+    font-family: "Heebo", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 30px;
+}
+.bottomtext{
+    width: 594px;
+    height: 93px;
+    flex-shrink: 0;
+    color: #21243D;
+    font-family: "Heebo", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.box{
+    display: flex;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 20px;
+}
+.footer{
+    justify-content: center;
+    align-items: center;
+    height: 182px;
+    flex-shrink: 0;
+}
+.subfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.component{
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+.component:hover{
+    cursor: pointer;
+    height: 37px;
+
+    background-color: white;
+}
+.footertext{
+    color: #21243D;
+    text-align: center;
+    font-family: "Heebo", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+@media screen and (max-width: 1024px) {
+    .main{
+        display: grid;
+        background: white;
+    }
+    .section1{
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        margin: 60px;
+        gap: 60px;
+        height: auto;
+        flex-shrink: 0;
+        background: white;
+    }
+    .picborder{
+        width: auto;
+        height: auto;
+        flex-shrink: 0;
+        fill: #EDF7FA;
+    }
+    .pic{
+        width: auto;
+        height: auto;
+        flex-shrink: 0;
+        border-radius: 243px;
+        background-image: url(images/Ellipse\ 1.png), lightgray 50% / cover no-repeat;
+    }
+    .section2{
+        display: grid;
+        justify-content: center;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .footer{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .name{
+        width: auto;
+        height: auto;
+    }
+    .textlayout{
+        width: auto;
+        height: auto;
+    }
+    .subsection{
+        padding: 0;
+    }
+    .box{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .section3{
+        margin: 0;
+    }
+    .bottomtext{
+        width: auto;
+        height: auto;
+        text-align: center;
+        padding: 20px;
+    }
+    .heading{
+        text-align: center;
+    }
+    .skill{
+        width: auto;
+        height: auto;
+        margin-left: 0;
+    }
+    .toptext{
+        text-align: center;
+    }
+    .picture{
+        width: auto;
+        height: auto;
+        text-align: center;
+        background: white;
+    }
+    .year{
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
+    .yearflex{
+        display: grid;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer{
+        display: grid;
+        height: auto;
+        overflow: scroll;
+        padding-bottom: 30px;
+    }
+    .subfooter{
+        height: auto;
+    }
+    .footertext{
+        width: auto;
+        height: auto;
+    }
+}
