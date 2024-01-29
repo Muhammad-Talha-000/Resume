@@ -9,15 +9,26 @@ body,html{
 }
 .main{
     background: white;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
+.hamburger{
+    display: none;
+}
+.navbarstyle{
+    display: flex;
+    justify-content: end;
 }
 .navbar ul{
     display: flex;
-    justify-content: right;
+    justify-content: end;
     list-style-type: none;
     background-color: white;
     overflow: hidden;
-    padding-right: 29px;
     gap: 18px;
+    padding-right: 110px;
 }
 .navbar a{
     color: black;
@@ -40,7 +51,7 @@ body,html{
 }
 .section1{
     margin: 60px;
-    gap: 147px;
+    gap: 105px;
     height: 396px;
     flex-shrink: 0;
     background: white;
@@ -48,7 +59,7 @@ body,html{
     justify-content: center;
 }
 .section1main{
-    display: block;
+    display: grid;
 }
 .name{
     width: 506px;
@@ -64,6 +75,7 @@ body,html{
 .picborder{
     width: 243px;
     height: 243px;
+    margin-top: 20px;
     flex-shrink: 0;
     fill: #EDF7FA;
 }
@@ -95,7 +107,6 @@ body,html{
     border: none;
     color: #FFF;
     font-size: 20px;
-    margin-top: 35px;
 }
 .downloadblock:hover{
     box-shadow: 2px 4px 8px grey;
@@ -148,6 +159,10 @@ body,html{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
 }
 .viewitems{
     padding-top: 10px;
@@ -167,7 +182,7 @@ body,html{
     cursor: pointer;
 }
 .subsection{
-    padding: 10px 30px;
+    padding: 10px 10px;
 }
 .section3{
     display: grid;
@@ -272,20 +287,54 @@ body,html{
     font-weight: 400;
     line-height: normal;
 }
-@media screen and (max-width: 1024px) {
+.footerdiv{
+    display: grid;
+    justify-content: center;
+}
+.material-symbols-outlined {
+    display: none !important;
+}
+
+.textlayout{
+    width: 368px; 
+    height: 117px;
+}
+
+@media screen and (max-width: 880px) {
+    .navbar ul{
+        display: none;
+    }
+    .material-symbols-outlined {
+        display: flex !important;
+        padding: 20px;
+        justify-content: end;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+    .material-symbols-outlined:hover{
+        background: #FF6464;
+        cursor: pointer;
+    }
     .main{
         display: grid;
         background: white;
     }
     .section1{
-        display: grid;
+        display: flex;
+        flex-direction: column-reverse;
         text-align: center;
         justify-content: center;
-        margin: 60px;
-        gap: 60px;
+        margin:0px 60px 30px 60px;
+        gap: 0px;
         height: auto;
         flex-shrink: 0;
         background: white;
+    }
+    .section1main{
+        gap: 30px;
     }
     .picborder{
         width: auto;
@@ -306,23 +355,31 @@ body,html{
         height: auto;
         padding-bottom: 20px;
     }
+    .child{
+        margin: 0px 10px;
+    }
     .footer{
         display: grid;
         justify-content: center;
         align-items: center;
         height: auto;
         flex-shrink: 0;
+        padding-bottom: 30px;
     }
     .name{
+        margin: 0;
+        padding-top: 30px;
         width: auto;
         height: auto;
     }
     .textlayout{
+        margin: 0;
         width: auto;
         height: auto;
     }
     .subsection{
         padding: 0;
+        margin-bottom: 20px;
     }
     .box{
         display: grid;
@@ -333,6 +390,7 @@ body,html{
         margin: 0;
     }
     .bottomtext{
+        margin: 0 30px;
         width: auto;
         height: auto;
         text-align: center;
@@ -354,6 +412,8 @@ body,html{
         height: auto;
         text-align: center;
         background: white;
+        margin-right: 0;
+        margin-bottom: 10px;
     }
     .year{
         text-align: center;
@@ -366,17 +426,77 @@ body,html{
         align-items: center;
         justify-content: center;
     }
-    .footer{
-        display: grid;
-        height: auto;
-        overflow: scroll;
-        padding-bottom: 30px;
-    }
     .subfooter{
         height: auto;
     }
     .footertext{
         width: auto;
         height: auto;
+    }
+    .viewitems{
+        display: none;
+    }
+    .downloadblock{
+        margin: 20px 0px;
+    }
+}
+@media screen and (max-width : 460px) {
+    .main{
+        justify-content: center;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .section1{
+        max-width: 300px;
+        margin: 0;
+        padding: 10px;
+    }
+    .section2{
+        max-width: max-content;
+    }
+    .section3{
+        max-width: fit-content;
+    }
+    .child{
+        height: auto;
+        width: auto;
+        display: grid;
+        margin: 0;
+    }
+    .childtop{
+        width: 260px;
+    }
+    .childmid{
+        width: auto;
+        height: 12px;
+        gap: 1px;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 6px;
+    }
+    .box{
+        padding: 0 20px;
+        width: 300px;
+    }
+    .picture{
+        text-align: start;
+    }
+    .textlayout{
+        width: 260px;
+    }
+    .heading{
+        text-align: left;
+    }
+    .bottomtext{
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    .yearflex{
+        justify-content: left;
     }
 }
