@@ -319,6 +319,15 @@ body,html{
     margin-top: -10px;
 }
 @media screen and (max-width: 880px) {
+    #pictureh{
+        width: 100%;
+    }
+    .bottomtext, .skill, .textlayout{
+        font-size: 25px;
+    }
+    .toptext{
+        font-size: 32px;
+    }
     .navbar ul{
         display: none;
     }
@@ -419,6 +428,7 @@ body,html{
     }
     .heading{
         text-align: center;
+        font-size: 40px;
     }
     .skill{
         width: auto;
