@@ -445,6 +445,8 @@ body,html{
         background: white;
         margin-right: 0;
         margin-bottom: 10px;
+        width: -webkit-fill-available;
+        padding: 10px 26px;
     }
     .year{
         text-align: center;
