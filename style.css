@@ -87,17 +87,31 @@ body,html{
     background-image: url(images/Ellipse\ 1.png), lightgray 50% / cover no-repeat;
 }
 .textlayout{
+    width: 368px; 
+    height: 117px;
     color: #21243D;
     font-family: "Heebo", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 497px;
+    width: 500px;
+    height: 66px;
+    flex-shrink: 0;
+}
+.boxtextlayout{
+    color: #21243D;
+    font-family: "Heebo", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: auto;
     height: 66px;
     flex-shrink: 0;
 }
 .downloadblock{
+    margin-top: 20px;
     width: 208px;
     height: 47px;
     flex-shrink: 0;
@@ -254,6 +268,11 @@ body,html{
     border-bottom: 1px solid #E0E0E0;
     margin-bottom: 20px;
 }
+.box0{
+    display: flex;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 20px;
+}
 .footer{
     justify-content: center;
     align-items: center;
@@ -294,12 +313,11 @@ body,html{
 .material-symbols-outlined {
     display: none !important;
 }
-
-.textlayout{
-    width: 368px; 
-    height: 117px;
+.pictext{
+    display:grid; 
+    gap: 15px; 
+    margin-top: -10px;
 }
-
 @media screen and (max-width: 880px) {
     .navbar ul{
         display: none;
@@ -353,7 +371,7 @@ body,html{
         display: grid;
         justify-content: center;
         height: auto;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     .child{
         margin: 0px 10px;
@@ -377,11 +395,14 @@ body,html{
         width: auto;
         height: auto;
     }
-    .subsection{
-        padding: 0;
-        margin-bottom: 20px;
+    .boxtextlayout{
+        width: auto;
     }
-    .box{
+    .subsection{
+        /* padding: 0; */
+        margin-bottom: 10px;
+    }
+    .box, .box0{
         display: grid;
         justify-content: center;
         align-items: center;
@@ -417,11 +438,9 @@ body,html{
     }
     .year{
         text-align: center;
-        width: auto;
-        height: auto;
     }
     .yearflex{
-        display: grid;
+        display: flex;
         gap: 20px;
         align-items: center;
         justify-content: center;
@@ -450,53 +469,93 @@ body,html{
         justify-content: flex-end;
     }
     .section1{
-        max-width: 300px;
+        /* max-width: 300px; */
         margin: 0;
         padding: 10px;
-    }
-    .section2{
-        max-width: max-content;
     }
     .section3{
         max-width: fit-content;
     }
     .child{
-        height: auto;
         width: auto;
-        display: grid;
         margin: 0;
     }
     .childtop{
-        width: 260px;
+        max-width: 300px;
+        font-size: 22px;
     }
     .childmid{
         width: auto;
         height: 12px;
-        gap: 1px;
+        gap: 20px;
+        font-size: 16px;
         margin-bottom: 0;
         margin-right: 0;
         margin-left: 0;
         margin-top: 6px;
     }
     .box{
-        padding: 0 20px;
-        width: 300px;
+        padding: 10px;
+        /* width: 300px; */
+    }
+    .boxtextlayout{
+        max-width: 300px;
+        width: auto;
     }
     .picture{
         text-align: start;
     }
-    .textlayout{
-        width: 260px;
-    }
     .heading{
         text-align: left;
+        font-size: 25px;
     }
     .bottomtext{
         text-align: left;
+        min-width: 280px;
         padding: 0;
         margin: 0;
     }
     .yearflex{
         justify-content: left;
+    }
+    .box0{
+        display: none;
+    }
+    #pictureh{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 350px) {
+    .name{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .textlayout{
+        max-width: 280px;
+        padding-left: 20px;
+    }
+    .child{
+        width: 260px;
+    }
+    .section3{
+        max-width: none;
+    }
+    .childtop{
+        max-width: 240px;
+        font-size: 20px;
+    }
+    .childmid{
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .pictext{
+        max-width: 260px;
+        padding: 10px;
+    }
+    .bottomtext{
+        min-width: 260px;
+    }
+    #pictureh{
+        width: 100%;
     }
 }
